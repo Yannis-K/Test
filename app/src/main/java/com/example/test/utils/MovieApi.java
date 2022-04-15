@@ -10,9 +10,6 @@ import retrofit2.http.Query;
 public interface MovieApi {
 
 
-
-
-
     @GET("3/movie/{movie_id}?")
     Call<MovieModel> getMovie(
             @Path("movie_id") int movie_id,
